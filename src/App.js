@@ -1,11 +1,22 @@
 import React from "react";
-import { browserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Accueil from "./pages/Accueil";
+import Bilan from "./pages/Bilan";
+import About from "./pages/About";
+import RendezVous from "./pages/RendezVous";
+import Prix from "./pages/Prix";
 
 const App = () => {
   return (
-    <div>
-      <h1>Projection</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/Bilan-de-competence" element={<Bilan />} />
+        <Route path="/Tarifs" element={<Prix />} />
+        <Route path="/Rendez-Vous" element={<RendezVous />} />
+        <Route path="/A-propos" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
