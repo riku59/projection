@@ -1,0 +1,18 @@
+.nav {
+  height: 6vh;
+  background: $nav;
+  .container_nav {
+    width: 70%;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 18px;
+      img {
+        width: 60px;
+      }
+    }
+  }
+}

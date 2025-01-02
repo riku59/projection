@@ -1,0 +1,46 @@
+.rdv {
+  h1 {
+    text-align: center;
+    padding: 100px 0 100px 0;
+    letter-spacing: 3px;
+    font-size: 52px;
+    background: $background;
+  }
+  .Container {
+    background: $background1;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid $border;
+    .container_rdv {
+      h2 {
+        text-align: center;
+        padding-bottom: 50px;
+        width: 50%;
+        margin: 0 auto;
+      }
+      .img_rdv {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5px;
+
+        img {
+          background-position: center;
+          object-fit: cover;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .container_txt {
+        padding-top: 40px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

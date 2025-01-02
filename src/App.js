@@ -5,6 +5,7 @@ import Bilan from "./pages/Bilan";
 import About from "./pages/About";
 import RendezVous from "./pages/RendezVous";
 import Prix from "./pages/Prix";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -12,8 +13,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Bilan-de-competence" element={<Bilan />} />
+        <Route path="/Rendez-vous" element={<RendezVous />} />
         <Route path="/Tarifs" element={<Prix />} />
-        <Route path="/Rendez-Vous" element={<RendezVous />} />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/A-propos" element={<About />} />
         <Route path="*" element={<Accueil />} />
       </Routes>

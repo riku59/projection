@@ -1,0 +1,34 @@
+.prix {
+  h1 {
+    text-align: center;
+    padding: 100px 0 100px 0;
+    letter-spacing: 3px;
+    font-size: 52px;
+    background: $background;
+  }
+  .txt_prix {
+    p {
+      padding-bottom: 100px;
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    .tableau_tarif {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      width: 75%;
+      margin: 0 auto;
+      border-top: 1px solid $border;
+
+      padding-bottom: 100px;
+      p {
+        width: 100%;
+        text-align: center;
+        border: 1px solid $border;
+
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -1,9 +1,12 @@
 import React from "react";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const Accueil = () => {
   return (
     <div>
-      <h1>Accueil</h1>
+      <Navigation />
+      <Footer />
     </div>
   );
 };

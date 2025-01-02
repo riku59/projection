@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  background: black;
+  color: white;
+
+  .footer_logo {
+    img {
+      height: 60px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: white;
+  }
+}
