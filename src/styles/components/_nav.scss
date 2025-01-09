@@ -1,13 +1,15 @@
 .nav {
-  height: 6vh;
-  background: $nav;
+  height: 10vh;
+  margin-bottom: 50px;
+
   .container_nav {
-    width: 70%;
     margin: 0 auto;
+    height: 100%;
 
     ul {
+      height: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       gap: 18px;
       img {

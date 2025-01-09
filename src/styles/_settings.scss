@@ -4,20 +4,26 @@
 }
 @font-face {
   font-family: "title";
-  src: url(../fonts/Belleza-Regular.ttf);
+  src: url(../fonts/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "h1";
+  src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 $color1: gray;
-$text: #80838d;
+$text: #044347;
 $background1: #f2eff3;
-$title: #65636d;
+$title: #044347;
 $border: #d0cdd7;
 $nav: #eae7ec;
 $background: #faf9fb;
 $button: #84828e;
+$hover: #044247d0;
 
 $font-title: "title", sans-serif;
 $font-text: "text", serif;
+$h1: "h1", serif;
 
 * {
   padding: 0;
@@ -32,6 +38,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   padding: 0;
+  max-width: 1440px;
 }
 
 h1,
@@ -40,6 +47,7 @@ h3,
 h4,
 h5 {
   font-family: $font-title;
+  color: $title;
 }
 p,
 a {
@@ -47,10 +55,16 @@ a {
   color: $text;
 }
 button {
-  width: 180px;
-  border-radius: 60px;
-  margin: 2em auto;
-  background-color: $button;
+  background-color: $title;
   color: white;
-  height: 50px;
+
+  font-size: 20px;
+  width: 250px;
+  height: 70px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $hover;
+    cursor: pointer;
+  }
 }

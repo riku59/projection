@@ -1,0 +1,139 @@
+.accueil {
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 60vh;
+
+  .header_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-size: 60px;
+      font-weight: 900;
+      font-family: $h1;
+      padding-bottom: 50px;
+      letter-spacing: 2px;
+      color: $title;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 50px;
+      line-height: 40px;
+    }
+    button {
+      font-size: 20px;
+      width: 250px;
+      height: 70px;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $hover;
+        cursor: pointer;
+      }
+    }
+    .txt_button {
+      color: #934916;
+      font-size: 15px;
+    }
+  }
+  .header_img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}
+.approche_accueil {
+  margin-bottom: 80px;
+
+  p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    &:hover {
+      background-color: $hover;
+      cursor: pointer;
+    }
+  }
+}
+.service {
+  h2 {
+    font-size: 40px;
+  }
+  margin-bottom: 80px;
+  .service-cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+      .circle-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #e0ddd8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 500;
+        &:hover {
+          background-color: $title;
+          transition: 0.5s ease;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          width: 200px;
+          height: 2px;
+          background: #e0ddd8;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          width: 200px;
+          height: 2px;
+          background: #e0ddd8;
+        }
+        span {
+          color: white;
+        }
+      }
+      h3 {
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
