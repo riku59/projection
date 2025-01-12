@@ -1,138 +1,191 @@
 .accueil {
+  background: url(../../../public/images/background.jpg) fixed center/cover;
   h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 50px;
+    text-align: center;
   }
-}
 
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 60vh;
+  .header {
+    display: grid;
 
-  .header_txt {
+    min-height: 100vh;
+    width: 75%;
+    margin: 0 auto;
+    .header_txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      h1 {
+        width: 65%;
+        font-size: 70px;
+        font-weight: 900;
+        font-family: $h1;
+        padding-bottom: 50px;
+        letter-spacing: 2px;
+        color: $title;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 50px;
+        line-height: 40px;
+      }
+      button {
+        font-size: 20px;
+        width: 250px;
+        height: 70px;
+        margin: 0 auto;
+
+        &:hover {
+          background-color: $hover;
+          cursor: pointer;
+        }
+      }
+      .txt_button {
+        color: #934916;
+        font-size: 15px;
+      }
+    }
+    .header_img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+  .approche_accueil {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 1px dashed gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    h1 {
-      font-size: 60px;
-      font-weight: 900;
-      font-family: $h1;
-      padding-bottom: 50px;
-      letter-spacing: 2px;
-      color: $title;
+    height: 800px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 80px 0;
+    background: #f3f3f3;
+    h2 {
+      text-align: center;
     }
     p {
-      font-size: 24px;
-      margin-bottom: 50px;
-      line-height: 40px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+      width: 75%;
+      margin: 0 auto;
     }
     button {
-      font-size: 20px;
-      width: 250px;
-      height: 70px;
-      margin: 0 auto;
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
       &:hover {
         background-color: $hover;
         cursor: pointer;
       }
     }
-    .txt_button {
-      color: #934916;
-      font-size: 15px;
-    }
   }
-  .header_img {
+  .service {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    img {
-      width: 400px;
-      height: 400px;
-    }
-  }
-}
-.approche_accueil {
-  margin-bottom: 80px;
-
-  p {
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 50px;
-    margin-bottom: 30px;
-  }
-  button {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 0;
-    &:hover {
-      background-color: $hover;
-      cursor: pointer;
-    }
-  }
-}
-.service {
-  h2 {
-    font-size: 40px;
-  }
-  margin-bottom: 80px;
-  .service-cards {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 800px;
+    width: 75%;
+    margin: 0 auto;
 
-    .card {
-      padding: 20px;
-      max-width: 300px;
-      text-align: center;
-      .circle-container {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        background-color: #e0ddd8;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        font-weight: 500;
-        &:hover {
-          background-color: $title;
-          transition: 0.5s ease;
+    padding-bottom: 80px;
+    background: #f3f3f3;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    .service-cards {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .card {
+        padding: 20px;
+        max-width: 300px;
+        text-align: center;
+        .circle-container {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto;
+          background-color: #e0ddd8;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3rem;
+          font-weight: 500;
+          &:hover {
+            background-color: $title;
+            transition: 0.5s ease;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 200px;
+            height: 2px;
+            background: #e0ddd8;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            width: 200px;
+            height: 2px;
+            background: #e0ddd8;
+          }
+          span {
+            color: white;
+          }
         }
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 100%;
-          width: 200px;
-          height: 2px;
-          background: #e0ddd8;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          right: 100%;
-          width: 200px;
-          height: 2px;
-          background: #e0ddd8;
-        }
-        span {
-          color: white;
+        h3 {
+          font-size: 22px;
+          margin-top: 25px;
+          margin-bottom: 15px;
         }
       }
-      h3 {
-        font-size: 22px;
-        margin-top: 25px;
-        margin-bottom: 15px;
+    }
+  }
+  .question {
+    border-radius: 30px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 50px auto;
+    padding-bottom: 80px;
+    background: #f3f3f3;
+    p {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      &:hover {
+        background-color: $hover;
+        cursor: pointer;
       }
     }
   }

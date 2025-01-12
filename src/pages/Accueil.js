@@ -17,20 +17,20 @@ const Accueil = () => {
           <button>Prendre rendez-vous</button>
           <p className="txt_button">1er consultation gratuite</p>
         </div>
-        <div className="header_img">
-          <img src="images/succes.webp" alt="image succès" />
-        </div>
       </section>
+      .
       <section className="approche_accueil">
-        <h2>Un accompagnement pour donner du sens à votre carrière</h2>
-        <p>
-          Que vous soyez en quête de nouvelles opportunités ou simplement
-          curieux d’explorer vos talents, le bilan de compétences est une étape
-          clé. Grâce à une analyse approfondie de vos compétences et un
-          accompagnement sur mesure, vous aurez toutes les clés pour bâtir un
-          projet professionnel qui vous ressemble.
-        </p>
-        <button>En savoir plus</button>
+        <div className="approche_accueil_text">
+          <h2>Un accompagnement pour donner du sens à votre carrière</h2>
+          <p>
+            Que vous soyez en quête de nouvelles opportunités ou simplement
+            curieux d’explorer vos talents, le bilan de compétences est une
+            étape clé. Grâce à une analyse approfondie de vos compétences et un
+            accompagnement sur mesure, vous aurez toutes les clés pour bâtir un
+            projet professionnel qui vous ressemble.
+          </p>
+          <button>En savoir plus</button>
+        </div>
       </section>
       <section className="service">
         <h2>Un accompagnement structuré pour atteindre vos objectifs</h2>

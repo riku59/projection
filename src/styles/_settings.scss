@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   padding: 0;
-  max-width: 1440px;
+  // max-width: 1440px;
 }
 
 h1,
@@ -57,7 +57,6 @@ a {
 button {
   background-color: $title;
   color: white;
-
   font-size: 20px;
   width: 250px;
   height: 70px;

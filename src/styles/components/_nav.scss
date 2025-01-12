@@ -1,9 +1,14 @@
 .nav {
   height: 10vh;
   margin-bottom: 50px;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background: #f3f3f380;
 
   .container_nav {
     margin: 0 auto;
+    width: 75%;
     height: 100%;
 
     ul {
