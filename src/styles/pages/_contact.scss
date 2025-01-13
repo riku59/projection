@@ -1,0 +1,12 @@
+.contact {
+  height: 100vh;
+  h1 {
+    padding: 100px;
+  }
+  .formulaire_contact {
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
