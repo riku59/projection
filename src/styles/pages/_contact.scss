@@ -1,12 +1,102 @@
 .contact {
   height: 100vh;
-  h1 {
-    padding: 100px;
+  position: relative;
+  background: url(../../../public/images/background.jpg) fixed center/cover;
+  z-index: 1;
+  padding-bottom: 100px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.432
+    ); /* Couleur et opacité de l'overlay */
+    z-index: -1; /* Derrière le contenu */
   }
+}
+
+.form_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: $background;
+  width: 85%;
+  margin: 0 auto;
   .formulaire_contact {
     form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      input {
+        height: 30px;
+        border: 1px solid rgb(148, 147, 147);
+      }
+      textarea {
+        border: 1px solid rgb(148, 147, 147);
+      }
+      .nom {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 20px auto;
+      }
+      .email {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 20px auto;
+      }
+      .objet {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 20px auto;
+      }
+      .message {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .info {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-left: 1px solid rgb(107, 107, 107);
+    h6 {
+      font-size: 15px;
+      margin: 0 40px;
+    }
+    .adresse {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      border-bottom: 1px solid rgb(107, 107, 107);
+    }
+    .telephone {
+      height: 100%;
+      display: flex;
+
+      align-items: center;
+      border-bottom: 1px solid rgb(107, 107, 107);
+    }
+    .mail {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      border-bottom: 1px solid rgb(107, 107, 107);
+    }
+    .social {
+      display: flex;
+      height: 100%;
+      align-items: center;
     }
   }
 }

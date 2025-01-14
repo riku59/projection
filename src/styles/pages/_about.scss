@@ -1,0 +1,23 @@
+.about {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 200px;
+  .about_amandine {
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    .about_txt {
+      width: 75%;
+      margin: 0 auto;
+      h2 {
+        margin: 40px 0 25px 40px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .end_about {
+    margin: 75px 0;
+  }
+}

@@ -13,11 +13,13 @@ const Bilan = () => {
       <Navigation />
       <div className="bilan">
         <h1>Bilan de compétence</h1>
-        <BilanPourQui />
-        <BilanObjectif />
-        <BilanComment />
-        <BilanDuree />
-        <BilanDeroulement />
+        <section className="bilan_explain">
+          <BilanPourQui />
+          <BilanObjectif />
+          <BilanComment />
+          <BilanDuree />
+          <BilanDeroulement />
+        </section>
       </div>
       <Footer />
     </div>

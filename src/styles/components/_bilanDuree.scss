@@ -1,3 +1,9 @@
 .duree {
+  grid-area: c1;
   background: $background1;
+  margin: 10px 10px 50px 50px;
+  padding: 20px;
+  h2 {
+    margin: 0 0 30px 50px;
+  }
 }
