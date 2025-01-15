@@ -6,10 +6,7 @@ const Navigation = () => {
     <div className="nav">
       <div className="container_nav">
         <ul>
-          <NavLink
-            to="/"
-            className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-          >
+          <NavLink to="/">
             <li>
               <img src="images/logo.webp" alt="logo projection" />
             </li>

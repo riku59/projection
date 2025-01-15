@@ -4,8 +4,9 @@
   position: fixed;
   width: 100%;
   margin: 0 auto;
-  background: #f3f3f380;
+  background: $background;
   z-index: 2;
+  opacity: 0.7;
 
   .container_nav {
     margin: 0 auto;
@@ -20,6 +21,15 @@
       gap: 18px;
       img {
         width: 60px;
+      }
+      a {
+        padding: 5px 8px;
+        border-radius: 20px;
+      }
+
+      a.nav-active {
+        border: 1px solid $color1;
+        background: $background1;
       }
     }
   }
