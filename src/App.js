@@ -6,10 +6,12 @@ import About from "./pages/About";
 import RendezVous from "./pages/RendezVous";
 import Prix from "./pages/Prix";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Bilan-de-competence" element={<Bilan />} />

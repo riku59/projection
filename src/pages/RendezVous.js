@@ -7,7 +7,7 @@ const RendezVous = () => {
     <div>
       <Navigation />
       <div className="rdv">
-        <h1>Prendre rendez vous</h1>
+        <div className="margin"></div>
         <div className="Container">
           <div className="container_rdv">
             <h2>Prise de rendez-vous</h2>

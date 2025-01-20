@@ -73,7 +73,7 @@ const BilanComment = () => {
         </p>
       </div>
       <div className="financement">
-        <h2>3/ Financement par France travail ou CAP emploi</h2>
+        <h3>3/ Financement par France travail ou CAP emploi</h3>
         <p>
           Si vous êtes demandeur d'emploi ou bénéficiaire d'une reconnaissance
           de travailleur handicapé, vous pouvez solliciter votre conseiller

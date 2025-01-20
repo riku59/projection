@@ -1,8 +1,9 @@
 .bilan {
   position: relative;
-  background: url(../../../public/images/background.jpg) fixed center/cover;
+  background: url(../../../public/images/background.webp) fixed center/cover;
   z-index: 1;
   padding-bottom: 100px;
+
   &::before {
     content: "";
     position: absolute;
@@ -18,22 +19,18 @@
     ); /* Couleur et opacité de l'overlay */
     z-index: -1; /* Derrière le contenu */
   }
-}
-h1 {
-  text-align: center;
-  padding: 25vh;
-  font-size: 70px;
-}
-.bilan_explain {
-  background: $background;
 
-  width: 75%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  opacity: 0.9;
-  grid-template-areas:
-    "a1 a2"
-    "b1 b1"
-    "c1 c2";
+  .bilan_explain {
+    background: $background;
+
+    width: 75%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    opacity: 0.9;
+    grid-template-areas:
+      "a1 a2"
+      "b1 b1"
+      "c1 c2";
+  }
 }

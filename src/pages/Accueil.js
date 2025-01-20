@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import { NavLink } from "react-router-dom";
 
 const Accueil = () => {
   return (
@@ -9,12 +10,19 @@ const Accueil = () => {
       <Navigation />
       <section className="header">
         <div className="header_txt">
+          <img
+            src="images/logo_complet_remove.webp"
+            alt="logo complet"
+            className="logo_complet"
+          />
           <h1>Découvrez vos talents, atteignez vos ambitions</h1>
           <p>
             Un accompagnement sur mesure pour analyser vos compétences, définir
             vos objectifs, et préparer votre avenir.
           </p>
-          <button>Prendre rendez-vous</button>
+          <NavLink to="/Contact">
+            <button>Prendre rendez-vous</button>
+          </NavLink>
           <p className="txt_button">1er consultation gratuite</p>
         </div>
       </section>
@@ -29,7 +37,9 @@ const Accueil = () => {
             accompagnement sur mesure, vous aurez toutes les clés pour bâtir un
             projet professionnel qui vous ressemble.
           </p>
-          <button>En savoir plus</button>
+          <NavLink to="/Bilan-de-competence">
+            <button>En savoir plus</button>
+          </NavLink>
         </div>
       </section>
       <section className="service">
@@ -63,7 +73,9 @@ const Accueil = () => {
           votre disposition pour répondre à toutes vos questions et vous
           accompagner dans votre réflexion.
         </p>
-        <button>Contacter moi</button>
+        <NavLink to="/contact">
+          <button>Contacter moi</button>
+        </NavLink>
       </section>
       <Footer />
     </div>

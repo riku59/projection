@@ -11,8 +11,9 @@ const Bilan = () => {
   return (
     <div>
       <Navigation />
+
       <div className="bilan">
-        <h1>Bilan de compétence</h1>
+        <div className="margin"></div>
         <section className="bilan_explain">
           <BilanPourQui />
           <BilanObjectif />

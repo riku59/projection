@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const isScrollingDown = currentScrollPos > prevScrollPos;
+    setPrevScrollPos(currentScrollPos);
+    setVisible(() => {
+      if (isScrollingDown === true) {
+        // si défilement vers le bas
+        return false; // Cacher la navigation
+      } else {
+        return true; // montre la nav
+      }
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <div className="nav">
+    <div className={`nav ${visible ? "visible" : "hidden"}`}>
       <div className="container_nav">
         <ul>
           <NavLink to="/">
