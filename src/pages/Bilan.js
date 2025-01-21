@@ -15,6 +15,9 @@ const Bilan = () => {
       <div className="bilan">
         <div className="margin"></div>
         <section className="bilan_explain">
+          <div className="img_bilan">
+            <img src="images/bilan_compétence.webp" alt="" />
+          </div>
           <BilanPourQui />
           <BilanObjectif />
           <BilanComment />

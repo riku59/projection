@@ -15,12 +15,11 @@ const RendezVous = () => {
               <img src="images/cabinet1.webp" alt="image cabinet" />
             </div>
             <div className="container_txt">
-              <p>Par téléphone au : 07.83.78.29.70</p>
-              <p>Par Mail : projection62@yahoo.com</p>
               <p>Un parking gratuit se situe à proximité du cabinet</p>
               <p>
-                Le cabinet n'est pas accessible aux personnes à mobilité réduite
-                mais je peux proposer d'autres lieux de rendez vous{" "}
+                Le cabinet n'est pas accessible aux personnes à mobilité
+                réduite, mais des solutions alternatives de rendez-vous peuvent
+                être proposées.
               </p>
             </div>
           </div>

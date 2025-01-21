@@ -4,6 +4,10 @@ const BilanDuree = () => {
   return (
     <section className="duree">
       <h2>Durée</h2>
+      {/* <div className="img_time">
+        <img src="images/time.webp" alt="image horloge" />
+      </div> */}
+
       <p>
         La durée du bilan de compétences varie selon le besoin de la personne.
         Elle est au maximum de 24 heures. Elle se répartit généralement sur

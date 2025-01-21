@@ -11,14 +11,14 @@
   src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-$color1: gray;
-$text: #044347;
+$color1: #eae7ec;
+$text: #044b50;
 $background1: #f2eff3;
 $title: #044347;
 $border: #d0cdd7;
 $nav: #eae7ec;
 $background: #faf9fb;
-$button: #84828e;
+$button: #044347;
 $hover: #044247d0;
 
 $font-title: "title", sans-serif;
@@ -55,7 +55,7 @@ a {
   color: $text;
 }
 button {
-  background-color: $title;
+  background-color: $button;
   color: white;
   font-size: 20px;
   width: 250px;

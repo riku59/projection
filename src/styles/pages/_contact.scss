@@ -1,5 +1,5 @@
 .contact {
-  height: 90vh;
+  height: 92vh;
   position: relative;
   background: url(../../../public/images/background.webp) fixed center/cover;
   z-index: 1;
@@ -23,19 +23,34 @@
 
 .form_info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   background: $background;
   width: 85%;
-  margin: 300px auto 0;
+  margin: 0 auto;
+  padding: 100px 0;
+  border: 1px solid $background1;
+  opacity: 0.9;
 
   .formulaire_contact {
+    background: $background1;
+    margin-left: 5%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     form {
       input {
+        width: 100%;
         height: 30px;
         border: 1px solid rgb(148, 147, 147);
+        padding-left: 8px;
       }
       textarea {
         border: 1px solid rgb(148, 147, 147);
+        width: 100%;
+        resize: none;
+        padding-left: 8px;
+      }
+      label {
+        margin-bottom: 2px;
       }
       .nom {
         display: flex;
@@ -64,6 +79,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 175px;
+      height: 50px;
+      margin: 25px auto;
     }
   }
   .info {
@@ -71,31 +89,43 @@
     align-items: center;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     border-left: 1px solid rgb(107, 107, 107);
+    background: $background1;
+    width: 95%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     h6 {
       font-size: 15px;
       margin: 0 40px;
     }
+    p {
+      font-size: 14px;
+    }
     .adresse {
-      display: flex;
+      display: grid;
+      grid-template-columns: 25% 75%;
       height: 100%;
       align-items: center;
       border-bottom: 1px solid rgb(107, 107, 107);
     }
     .telephone {
       height: 100%;
-      display: flex;
+      display: grid;
+      grid-template-columns: 25% 75%;
+      justify-content: center;
 
       align-items: center;
       border-bottom: 1px solid rgb(107, 107, 107);
     }
     .mail {
-      display: flex;
+      display: grid;
+      grid-template-columns: 25% 75%;
       height: 100%;
       align-items: center;
       border-bottom: 1px solid rgb(107, 107, 107);
     }
     .social {
-      display: flex;
+      display: grid;
+      grid-template-columns: 25% 75%;
       height: 100%;
       align-items: center;
     }

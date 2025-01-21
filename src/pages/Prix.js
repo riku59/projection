@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 
 const Prix = () => {
   const options = [
+    { hours: "1er rendez vous", price: "gratuit" },
     { hours: "14h", price: "1260€" },
     { hours: "16h", price: "1440€" },
     { hours: "20h", price: "1800€" },
@@ -24,8 +25,15 @@ const Prix = () => {
           </p>
           <div className="tableau_tarif">
             {options.map((option, index) => (
-              <div className="card" key={index}>
-                <h2>Accompagnement de {option.hours}</h2>
+              <div
+                className={`card ${index === 0 ? "free-card" : ""}`}
+                key={index}
+              >
+                <h2>
+                  {option.hours === "1er rendez vous"
+                    ? "Premier rendez-vous"
+                    : `Accompagnement de ${option.hours}`}
+                </h2>
                 <p className="price">{option.price}</p>
               </div>
             ))}

@@ -8,6 +8,7 @@ const Contact = () => {
       <Navigation />
       <div className="contact">
         <h1>Contact</h1>
+        <div className="margin"></div>
         <div className="form_info">
           <div className="formulaire_contact">
             <form action="#">
@@ -46,8 +47,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   id="message"
-                  cols="100"
-                  rows="10"
+                  rows="7"
                   placeholder="Entrez votre message"
                 ></textarea>
               </div>
