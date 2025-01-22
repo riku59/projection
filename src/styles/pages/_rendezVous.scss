@@ -3,6 +3,7 @@
   background: url(../../../public/images/background.webp) fixed center/cover;
   z-index: 1;
   min-height: 92vh;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -66,6 +67,18 @@
         text-align: center;
         padding: 25px 0;
       }
+    }
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    .lieu {
+      width: 75%;
+      height: 100%;
+      opacity: 0.9;
     }
   }
 }

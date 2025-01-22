@@ -4,12 +4,13 @@ import Footer from "../components/Footer";
 
 const Prix = () => {
   const options = [
-    { hours: "1er rendez vous", price: "gratuit" },
+    { hours: "Premier rendez-vous", price: "Gratuit" },
     { hours: "14h", price: "1260€" },
     { hours: "16h", price: "1440€" },
     { hours: "20h", price: "1800€" },
     { hours: "24h", price: "2150€" },
   ];
+
   return (
     <div>
       <Navigation />
@@ -23,20 +24,23 @@ const Prix = () => {
             faudra compter un temps d'investissement personnel qui n'est pas
             tarifé.
           </p>
-          <div className="tableau_tarif">
-            {options.map((option, index) => (
-              <div
-                className={`card ${index === 0 ? "free-card" : ""}`}
-                key={index}
-              >
-                <h2>
-                  {option.hours === "1er rendez vous"
-                    ? "Premier rendez-vous"
-                    : `Accompagnement de ${option.hours}`}
-                </h2>
-                <p className="price">{option.price}</p>
-              </div>
-            ))}
+          <div className="table-container">
+            <table className="pricing-table">
+              <thead>
+                <tr>
+                  <th>Durée</th>
+                  <th>Tarif</th>
+                </tr>
+              </thead>
+              <tbody>
+                {options.map((option, index) => (
+                  <tr key={index} className={index === 0 ? "free-row" : ""}>
+                    <td>{option.hours}</td>
+                    <td>{option.price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

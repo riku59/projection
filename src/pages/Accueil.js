@@ -16,7 +16,7 @@ const Accueil = () => {
             className="logo_complet"
           />
           <h1>Découvrez vos talents, atteignez vos ambitions</h1>
-          <p>
+          <p className="txt_header">
             Un accompagnement sur mesure pour analyser vos compétences, définir
             vos objectifs, et préparer votre avenir.
           </p>

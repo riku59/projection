@@ -12,12 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.432
-    ); /* Couleur et opacité de l'overlay */
+    background-color: rgba(255, 255, 255, 0.432);
     z-index: -1;
   }
 
@@ -26,79 +21,63 @@
     background: $background;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: $text;
     padding: 35px;
+    opacity: 0.9;
 
     .intro {
       font-size: 1.2rem;
       line-height: 1.8;
-      margin-bottom: 50px;
-      width: 100%;
-      margin: 0 auto;
-      padding-bottom: 35px;
-
+      margin-bottom: 20px;
+      padding: 25px;
       background: $background1;
+      border-radius: 10px;
     }
 
-    .tableau_tarif {
-      background: $background1;
+    .table-container {
       width: 100%;
-      margin: 0 auto;
-      display: grid;
-      justify-items: center;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px;
-      justify-content: center;
-      padding-bottom: 35px;
+      overflow-x: auto;
+    }
 
-      .card {
-        background: $background;
-        border-radius: 15px;
-        padding: 40px 30px;
-        width: 250px;
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: $background1;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
 
+      th,
+      td {
+        padding: 20px;
+        font-size: 1.2rem;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        h2 {
-          font-size: 1.5rem;
-
-          margin-bottom: 10px;
-          font-weight: bold;
-        }
-
-        .price {
-          font-size: 1.6rem;
-          font-weight: bold;
-          color: $text;
-        }
+        border-bottom: 1px solid $text(255, 255, 255, 0.1);
       }
 
-      .free-card {
-        background: linear-gradient(135deg, #34bd6d, #27ae60);
-        color: #fff;
-        border: none;
-        box-shadow: 0 10px 30px rgba(39, 174, 96, 0.5);
-
-        h2 {
-          color: #fff;
+      th {
+        background: $background1;
+        color: $text;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      thead {
+        th {
+          background: $border;
         }
+      }
+      tr:nth-child(even) {
+        background-color: $background1;
+      }
 
-        .price {
-          color: #ecf0f1;
-          font-size: 2rem;
-        }
+      tr:hover {
+        background-color: $border;
+      }
 
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0 20px 40px rgba(39, 174, 96, 0.6);
-        }
+      .free-row {
+        background: linear-gradient(135deg, #34bd6d00, #27ae5f77);
+        color: $text;
+        font-weight: bold;
       }
     }
   }
@@ -110,8 +89,12 @@
     padding: 30px 15px;
 
     .txt_prix {
-      .tableau_tarif {
-        grid-template-columns: 1fr;
+      .pricing-table {
+        th,
+        td {
+          padding: 15px;
+          font-size: 1rem;
+        }
       }
     }
   }
