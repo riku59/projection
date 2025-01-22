@@ -12,7 +12,7 @@ const RendezVous = () => {
           <div className="container_rdv">
             <h2>Prise de rendez-vous</h2>
             <div className="img_rdv">
-              <img src="images/cabinet1.webp" alt="image cabinet" />
+              <img src="images/cabinet1.webp" alt="cabinet" />
             </div>
             <div className="container_txt">
               <p>Un parking gratuit se situe à proximité du cabinet</p>
@@ -26,7 +26,7 @@ const RendezVous = () => {
           <div className="container_rdv">
             <h2>Lieu du rendez-vous</h2>
             <div className="img_rdv">
-              <img src="images/cabinet.webp" alt="image cabinet" />
+              <img src="images/cabinet.webp" alt=" cabinet" />
             </div>
             <div className="container_txt">
               <p>Je vous reçoit sur rendez-vous au </p>
