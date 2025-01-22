@@ -1,23 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
 
-  const handleScroll = () => {
+  // Utilisation de useCallback pour mémoriser handleScroll
+  const handleScroll = useCallback(() => {
     const currentScrollPos = window.scrollY;
     const isScrollingDown = currentScrollPos > prevScrollPos;
     setPrevScrollPos(currentScrollPos);
-    setVisible(() => {
-      if (isScrollingDown === true) {
-        // si défilement vers le bas
-        return false; // Cacher la navigation
-      } else {
-        return true; // montre la nav
-      }
-    });
-  };
+    setVisible(isScrollingDown === true ? false : true); // simplification
+  }, [prevScrollPos]); // Ajoute prevScrollPos comme dépendance de handleScroll
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -25,7 +19,7 @@ const Navigation = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [handleScroll]); // Ajoute handleScroll comme dépendance dans useEffect
 
   return (
     <div className={`nav ${visible ? "visible" : "hidden"}`}>
