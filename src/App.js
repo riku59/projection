@@ -5,7 +5,7 @@ import Bilan from "./pages/Bilan";
 import About from "./pages/About";
 import RendezVous from "./pages/RendezVous";
 import Prix from "./pages/Prix";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
