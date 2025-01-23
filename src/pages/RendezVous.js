@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Contact from "./Contact";
 
 const RendezVous = () => {
   return (
@@ -29,11 +30,12 @@ const RendezVous = () => {
               <img src="images/cabinet.webp" alt=" cabinet" />
             </div>
             <div className="container_txt">
-              <p>Je vous reçoit sur rendez-vous au </p>
+              <p>Je vous reçois sur rendez-vous au </p>
               <p>16 Rue des maraîcher 62500 Saint omer</p>
             </div>
           </div>
         </div>
+        <Contact />
         <div className="map">
           <iframe
             title="carte du lieu"
@@ -47,6 +49,7 @@ const RendezVous = () => {
           ></iframe>
         </div>
       </div>
+
       <Footer />
     </div>
   );

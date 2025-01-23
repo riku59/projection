@@ -1,14 +1,15 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className="contact">
-        <h1>Contact</h1>
-        <div className="margin"></div>
+        {/* <div className="margin"></div> */}
         <div className="form_info">
           <div className="formulaire_contact">
             <form action="#">
@@ -61,23 +62,24 @@ const Contact = () => {
             </div>
             <div className="telephone">
               <h6>Téléphone</h6>
-              <p>00 00 00 00 00</p>
+              <p>07 83 78 29 70</p>
             </div>
             <div className="mail">
               <h6>Email </h6>
-              <p>Projection@yahoo.com</p>
+              <p>amandine.tetart@yahoo.fr</p>
             </div>
             <div className="social">
-              <h6>social</h6>
-              <p>Ajouter les reseaux</p>
+              <h6>Linkedin</h6>
+              <a href="https://www.linkedin.com/in/amandine-tetart-2b8255155/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
 
 export default Contact;
-<h1>Contact</h1>;

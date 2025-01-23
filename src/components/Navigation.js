@@ -34,7 +34,7 @@ const Navigation = () => {
             to="/Bilan-de-competence"
             className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
           >
-            <li>Bilan de compétence</li>
+            <li>Bilan de compétences</li>
           </NavLink>
           <NavLink
             to="/Rendez-vous"
@@ -48,12 +48,7 @@ const Navigation = () => {
           >
             <li>Tarifs</li>
           </NavLink>
-          <NavLink
-            to="/Contact"
-            className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-          >
-            <li>Contact</li>
-          </NavLink>
+
           <NavLink
             to="/A-propos"
             className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}

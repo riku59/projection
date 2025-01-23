@@ -7,7 +7,7 @@ const Footer = () => {
         <img src="images/logo.webp" alt="logo projection" />
       </div>
       <p>TETART Amandine</p>
-      <p>16 rue des maraîcher 62500 Saint Omer</p>
+      <p>16 rue des maraîchers 62500 Saint Omer</p>
       <p>Projection62@yahoo.com</p>
       <p>1er rendez-vous gratuit</p>
     </div>
