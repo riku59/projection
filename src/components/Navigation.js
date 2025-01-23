@@ -31,6 +31,12 @@ const Navigation = () => {
             </li>
           </NavLink>
           <NavLink
+            to="/A-propos"
+            className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+          >
+            <li>Présentation</li>
+          </NavLink>
+          <NavLink
             to="/Bilan-de-competence"
             className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
           >
@@ -47,13 +53,6 @@ const Navigation = () => {
             className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
           >
             <li>Tarifs</li>
-          </NavLink>
-
-          <NavLink
-            to="/A-propos"
-            className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-          >
-            <li>Présentation</li>
           </NavLink>
         </ul>
       </div>

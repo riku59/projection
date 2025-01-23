@@ -20,7 +20,7 @@ const Accueil = () => {
             Un accompagnement sur mesure pour analyser vos compétences, définir
             vos objectifs, et préparer votre avenir.
           </p>
-          <NavLink to="/Contact">
+          <NavLink to="/Rendez-vous">
             <button>Prendre rendez-vous</button>
           </NavLink>
           <p className="txt_button">1er consultation gratuite</p>
@@ -73,7 +73,7 @@ const Accueil = () => {
           votre disposition pour répondre à toutes vos questions et vous
           accompagner dans votre réflexion.
         </p>
-        <NavLink to="/contact">
+        <NavLink to="/Rendez-vous">
           <button>Contacter moi</button>
         </NavLink>
       </section>
