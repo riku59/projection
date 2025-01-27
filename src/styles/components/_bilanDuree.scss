@@ -1,19 +1,13 @@
 .duree {
-  grid-area: c1;
+  grid-area: d1;
   background: $background1;
   margin: 10px 10px 50px 50px;
   padding: 20px;
-  .img_time {
-    width: 200px;
-    margin: 0 auto;
-    padding-bottom: 50px;
 
-    img {
-      width: 100%;
-      border-radius: 100%;
-    }
-  }
-  h2 {
-    margin: 0 0 30px 50px;
+  .txt_duree {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
   }
 }

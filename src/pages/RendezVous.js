@@ -15,8 +15,8 @@ const RendezVous = () => {
             <div className="img_rdv">
               <img src="images/cabinet1.webp" alt="cabinet" />
             </div>
-            <div className="container_txt">
-              <p>Un parking gratuit se situe à proximité du cabinet</p>
+            <div className="container_txt1">
+              <p>Un parking gratuit se situe à proximité du cabinet.</p>
               <p>
                 Le cabinet n'est pas accessible aux personnes à mobilité
                 réduite, mais des solutions alternatives de rendez-vous peuvent
@@ -30,7 +30,7 @@ const RendezVous = () => {
               <img src="images/cabinet.webp" alt=" cabinet" />
             </div>
             <div className="container_txt">
-              <p>Je vous reçois sur rendez-vous au </p>
+              <p>Je vous reçois sur rendez-vous au : </p>
               <p>16 Rue des maraîcher 62500 Saint omer</p>
             </div>
           </div>

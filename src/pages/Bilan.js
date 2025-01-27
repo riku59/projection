@@ -6,6 +6,7 @@ import BilanObjectif from "../components/Bilan.js/BilanObjectif";
 import BilanComment from "../components/Bilan.js/BilanComment";
 import BilanDuree from "../components/Bilan.js/BilanDuree";
 import BilanDeroulement from "../components/Bilan.js/BilanDeroulement";
+import BilanFiancement from "../components/Bilan.js/BilanFiancement";
 
 const Bilan = () => {
   return (
@@ -20,9 +21,10 @@ const Bilan = () => {
           </div>
           <BilanPourQui />
           <BilanObjectif />
-          <BilanComment />
+          <BilanFiancement />
           <BilanDuree />
           <BilanDeroulement />
+          <BilanComment />
         </section>
       </div>
       <Footer />

@@ -1,24 +1,64 @@
 .about {
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 200px;
-  height: 92vh;
+  min-height: 92vh;
   .about_amandine {
-    padding-bottom: 100px;
-    display: grid;
-    grid-template-columns: 70% 30%;
+    background: $background1;
+    border-radius: 15px;
+
+    grid-template-rows: 60% 40%;
+    padding: 50px 0;
     .about_txt {
-      width: 75%;
+      display: flex;
+      gap: 25px;
+      width: 85%;
       margin: 0 auto;
       h2 {
-        margin: 40px 0 25px 40px;
+        margin: 0px 0 25px 40px;
+        letter-spacing: 2px;
+      }
+      p {
+        letter-spacing: 1px;
+        line-height: 25px;
+      }
+      .formation {
+        background: $background;
+        padding: 30px;
+        border-radius: 25px;
+        width: 85%;
+        margin: 0 auto;
+      }
+      .why {
+        margin-top: 45px;
+        background: $background;
+        padding: 30px;
+        border-radius: 25px;
+        width: 85%;
+        margin: 0 auto;
       }
     }
-    img {
+    .photo_amandine {
       width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      img {
+        width: 400px;
+        border-radius: 1500px;
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
   .end_about {
-    margin: 75px 0;
+    margin: 55px auto;
+    width: 100%;
+    background: $background;
+    h3 {
+      width: 75%;
+      margin: 0 auto;
+    }
   }
 }

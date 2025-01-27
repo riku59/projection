@@ -8,23 +8,28 @@ const About = () => {
       <Navigation />
       <div className="about">
         <div className="about_amandine">
+          <div className="photo_amandine">
+            <img src="images/Photo_amandine.webp" alt="amandine" />
+          </div>
           <div className="about_txt">
-            <h2>Formation</h2>
-            <p>
-              Diplômée d'une maitrise en sciences de l'éducation à l'université
-              de Lille 1 , j'ai exercé en tant que conseillère en insertion
-              pendant plus de 17 ans où j'ai accompagné tout type de public dans
-              leur projet professionnel ainsi que leur retour à l'emploi. Une
-              expérience riche tant humainement que professionnellement, et qui
-              m'a conduite à me perfectionner dans le domaine de
-              l'accompagnement.
-            </p>
-            <p>
-              Je me suis formée en 2024 avec AXIOME afin de devenir Consultante
-              en bilan de compétences et m'installer en activité libérale en
-              juillet 2024 en complément de mon activité principale de
-              conseillère d'orientation.{" "}
-            </p>
+            <div className="formation">
+              <h2>Formation</h2>
+              <p>
+                Diplômée d'une maitrise en sciences de l'éducation à
+                l'université de Lille 1, j'ai exercé en tant que conseillère en
+                insertion pendant plus de 17 ans où j'ai accompagné tout type de
+                public dans leur projet professionnel ainsi que leur retour à
+                l'emploi. Une expérience riche tant humainement que
+                professionnellement, et qui m'a conduite à me perfectionner dans
+                le domaine de l'accompagnement.
+              </p>
+              <p>
+                Je me suis formée en 2024 avec AXIOME afin de devenir
+                Consultante en bilan de compétences et m'installer en activité
+                libérale en juillet 2024 en complément de mon activité
+                principale de conseillère d'orientation.{" "}
+              </p>
+            </div>
             <div className="why">
               <h2>Pourquoi?</h2>
               <p>
@@ -43,7 +48,6 @@ const About = () => {
               </p>
             </div>
           </div>
-          <img src="images/Photo_amandine.webp" alt="amandine" />
         </div>
         <div className="end_about">
           <h3>
