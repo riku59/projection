@@ -16,4 +16,23 @@
     font-size: 14px;
     color: white;
   }
+  @media (max-width: 1000px) {
+    gap: 10px;
+    .footer_logo {
+      img {
+        height: 45px;
+      }
+    }
+    p {
+      font-size: 9px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 550px) {
+    .footer_logo {
+      img {
+        height: 30px;
+      }
+    }
+  }
 }

@@ -140,3 +140,39 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .contact {
+    .form_info {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      .info {
+        width: 75%;
+        margin: 0 auto;
+        border-radius: 25px;
+        border: 1px solid $text;
+
+        h6 {
+          margin: 0 20px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .formulaire_contact {
+      width: 75%;
+      border-radius: 25px;
+    }
+  }
+}
+@media (max-width: 530px) {
+  .form_info {
+    .info {
+      .telephone {
+        grid-template-columns: 40% 60%;
+      }
+    }
+  }
+}

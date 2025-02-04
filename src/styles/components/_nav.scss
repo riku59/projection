@@ -75,7 +75,7 @@
       ul {
         gap: 10px;
         a {
-          font-size: 12px;
+          font-size: 13px;
         }
         img {
           width: 40px;
@@ -83,13 +83,13 @@
       }
     }
   }
-  @media (max-width: 470px) {
+  @media (max-width: 500px) {
     .container_nav {
       width: 95%;
       ul {
-        gap: 10px;
+        gap: 8px;
         a {
-          font-size: 10px;
+          font-size: 12px;
         }
       }
     }

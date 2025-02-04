@@ -92,6 +92,12 @@
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr;
       gap: 25px;
+      .container_rdv {
+        h2 {
+          padding: 25px 0;
+          width: 75%;
+        }
+      }
     }
   }
 }
