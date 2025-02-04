@@ -91,12 +91,18 @@
     padding: 30px 15px;
 
     .txt_prix {
+      padding: 50px 35px;
       .pricing-table {
         th,
         td {
           padding: 15px;
           font-size: 1rem;
         }
+      }
+      .intro {
+        padding: 10px;
+        font-size: 15px;
+        text-align: left;
       }
     }
   }

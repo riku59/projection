@@ -69,4 +69,29 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .container_nav {
+      width: 90%;
+      ul {
+        gap: 10px;
+        a {
+          font-size: 12px;
+        }
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+  @media (max-width: 470px) {
+    .container_nav {
+      width: 95%;
+      ul {
+        gap: 10px;
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }

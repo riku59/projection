@@ -87,4 +87,11 @@
       opacity: 0.9;
     }
   }
+  @media (max-width: 768px) {
+    .Container {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  }
 }

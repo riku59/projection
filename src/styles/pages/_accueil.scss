@@ -117,6 +117,7 @@
       gap: 50px;
       flex-wrap: wrap;
       justify-content: center;
+      overflow: hidden;
 
       .card {
         padding: 20px;
@@ -176,7 +177,7 @@
     justify-content: center;
     width: 75%;
     margin: 50px auto;
-    padding-bottom: 80px;
+
     background: #f3f3f3;
     p {
       text-align: center;
@@ -192,6 +193,38 @@
       &:hover {
         background-color: $hover;
         cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .header {
+      .header_txt {
+        .logo_complet {
+          width: 90%;
+          margin: 0 auto 100px;
+        }
+        h1 {
+          font-size: 52px;
+        }
+      }
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .approche_accueil {
+      p {
+        line-height: 44px;
+      }
+    }
+    .service {
+      .service-cards {
+        .card {
+          .circle-container {
+            width: 85px;
+            height: 85px;
+          }
+        }
       }
     }
   }
