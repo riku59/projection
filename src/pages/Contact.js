@@ -58,19 +58,19 @@ const Contact = () => {
           <div className="info">
             <div className="adresse">
               <h6>Adresse</h6>
-              <p>16 rue de maraîchers 62500 Saint Omer</p>
+              <p>xx rue des passants 62500 Saint Omer</p>
             </div>
             <div className="telephone">
               <h6>Téléphone</h6>
-              <p>07 83 78 29 70</p>
+              <p>xx xx xx xx xx</p>
             </div>
             <div className="mail">
               <h6>Email </h6>
-              <p>amandine.tetart@yahoo.fr</p>
+              <p>nom.email@yahoo.fr</p>
             </div>
             <div className="social">
               <h6>Linkedin</h6>
-              <a href="https://www.linkedin.com/in/amandine-tetart-2b8255155/">
+              <a href="https://www.linkedin.com">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
