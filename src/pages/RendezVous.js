@@ -31,7 +31,7 @@ const RendezVous = () => {
             </div>
             <div className="container_txt">
               <p>Je vous reçois sur rendez-vous au : </p>
-              <p>16 Rue des maraîcher 62500 Saint omer</p>
+              <p>xx rue des passants 62500 Saint omer</p>
             </div>
           </div>
         </div>
