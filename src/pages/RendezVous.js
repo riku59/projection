@@ -40,7 +40,7 @@ const RendezVous = () => {
           <iframe
             title="carte du lieu"
             className="lieu"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.0632116926263!2d2.2674260132698962!3d50.755861571533856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcf8c73283f923%3A0x7b20b8c20732a82a!2s16%20Rue%20des%20Mara%C3%AEchers%2C%2062500%20Saint-Omer!5e0!3m2!1sfr!2sfr!4v1737545372872!5m2!1sfr!2sfr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40375.1585537084!2d2.264805699999989!3d50.76727925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcf893912760af%3A0x40af13e8163d5e0!2sSaint-Omer!5e0!3m2!1sfr!2sfr!4v1738781643615!5m2!1sfr!2sfr"
             // width="600"
             // height="450"
             // allowfullscreen=""
